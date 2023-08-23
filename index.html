@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+
     <title>AX CAR</title>
   </head>
   <body>
@@ -284,10 +289,20 @@
             </a>
           </div>
           <div class="cta_section_right">
-            <img
-              src="/img/Carousel _ Horizontal scrolling_ Arrow Left & Right-min.jpg"
-              alt=""
-            />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/img/Foto-min.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Fotoju-min.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/Foto-min.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </section>
 
@@ -473,6 +488,8 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script src="/script.js"></script>
   </body>
 </html>

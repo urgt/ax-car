@@ -8,10 +8,6 @@ function toggleMenu() {
   }
 }
 
-function toggleMenu() {
-  $(".header .nav").slideToggle("fast");
-}
-
 if ($("#language-selected").is(":empty")) {
   $(".menu li").each(function () {
     if ($(this).attr("class") == "selected") {
@@ -36,4 +32,12 @@ $(".dropdownbox").click(function () {
 //Close language select box if nothing is selected
 $("#dropdown-wrapper").mouseleave(function () {
   $(".menu").removeClass("showMenu");
+});
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

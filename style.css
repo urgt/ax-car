@@ -146,6 +146,10 @@ a {
   scroll-behavior: smooth;
   --section-padding: 100px;
   --main-color: #d3a188;
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-size: 22px;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
 
 .luxury {
@@ -663,6 +667,31 @@ ul.menu li:hover {
 .cta_section_left {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+.cta_section_right {
+  width: 50%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* logos section */
@@ -983,6 +1012,24 @@ button.button {
     background-size: cover;
     background-position: center;
   }
+
+  .cta_section {
+    flex-direction: column;
+  }
+
+  .cta_section_right,
+  .cta_section_right {
+    width: 100%;
+  }
+  .cta_section {
+    flex-direction: column;
+  }
+  .cta_section_left {
+    text-align: center;
+  }
+  .cta_section_left .button {
+    margin: auto;
+  }
 }
 @media (max-width: 850px) {
   .get_consultation {
@@ -1052,19 +1099,6 @@ button.button {
     flex-direction: column;
   }
 
-  .cta_section {
-    flex-direction: column;
-  }
-  .cta_section_left {
-    text-align: center;
-  }
-  .cta_section_left .button {
-    margin: auto;
-  }
-
-  .cta_section_right img {
-    width: 100%;
-  }
   .mobile_foto {
     display: block;
     width: 100%;
@@ -1086,5 +1120,8 @@ button.button {
   }
   .footer {
     grid-template-columns: 1fr;
+  }
+  .bottom_copyright {
+    text-align: center;
   }
 }
