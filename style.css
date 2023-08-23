@@ -345,6 +345,10 @@ body {
   height: 50px;
 }
 
+.mobile_foto {
+  display: none;
+}
+
 /* main page catalog */
 
 .main_page_catalog {
@@ -691,16 +695,6 @@ button.button {
   width: 80%;
 }
 
-.footer_block_title {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32.2px; /* 140% */
-  margin-bottom: 32px;
-}
-
 .footer_get_in_touch {
   display: flex;
   flex-direction: column;
@@ -721,7 +715,7 @@ button.button {
   gap: 6px;
 }
 
-.footer_quicklinks {
+.footer_quicklinks div {
   color: #fff;
   font-family: Raleway;
   font-size: 15px;
@@ -732,6 +726,19 @@ button.button {
   opacity: 0.5;
   flex-direction: column;
   gap: 15px;
+}
+
+.footer_get_in_touch .footer_block_title,
+.footer_quicklinks .footer_block_title,
+.footer_location .footer_block_title {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.2px; /* 140% */
+  margin: 28px 0;
+  opacity: 1;
 }
 
 .bottom_copyright {
@@ -781,21 +788,55 @@ button.button {
     background-size: cover;
     background-position: center;
   }
-}
 
-@media (max-width: 995px) {
   .main_page_catalog_cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
   }
 
   .main_page_catalog_cards_card {
-    max-width: 273px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 850px) {
+  .get_consultation {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .get_consultation_inner {
+    background: none;
+    border: none;
+  }
+  .get_consultation_inner .section_title {
+    color: var(--text, #fff);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 54px; /* 168.75% */
+    text-transform: uppercase;
+  }
+  .get_consultation_form {
+    flex-direction: column;
+  }
+  .get_consultation_form input {
+    width: -webkit-fill-available;
+  }
+  .lux_line {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
   }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --section-padding: 50px;
+  }
   .hero_title {
     color: #fff;
     font-family: Gilda Display;
@@ -817,7 +858,48 @@ button.button {
     line-height: 54px; /* 150% */
     text-transform: uppercase;
   }
+
   .about_ax_cars_content_bottom {
     flex-direction: column;
+  }
+
+  .info_cards {
+    flex-direction: column;
+  }
+
+  .cta_section {
+    flex-direction: column;
+  }
+  .cta_section_left {
+    text-align: center;
+  }
+  .cta_section_left .button {
+    margin: auto;
+  }
+
+  .cta_section_right img {
+    width: 100%;
+  }
+  .mobile_foto {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .logos_section {
+    overflow: scroll;
+    justify-content: unset;
+    gap: 55px;
+  }
+
+  .reviews_block {
+    grid-template-columns: 1fr;
+  }
+  .main_page_catalog_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr;
   }
 }
