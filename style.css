@@ -230,7 +230,7 @@ body {
   background-image: url(/img/Foto-min.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 50%;
+  background-size: 50% 100%;
 }
 
 .hero_content {
@@ -264,7 +264,8 @@ body {
 /* about us section */
 
 .about_ax_cars {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   background-image: url(/img/Fotoju-min.png);
   background-repeat: no-repeat;
   background-position: left top;
@@ -347,7 +348,8 @@ body {
 /* main page catalog */
 
 .main_page_catalog {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .main_page_catalog_inner {
@@ -445,7 +447,8 @@ body {
 /* how it works section */
 
 .how_it_works {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   text-align: center;
 }
 
@@ -495,7 +498,8 @@ body {
 .cta_section {
   display: flex;
   align-items: center;
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   gap: 55px;
 }
 .cta_section_left {
@@ -518,7 +522,8 @@ body {
 /* reviews section */
 
 .reviews_section {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   background-image: url(/img/Section-min\(1\).webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -581,7 +586,8 @@ body {
 /* get consultation */
 
 .get_consultation {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .get_consultation_inner {
@@ -661,7 +667,8 @@ button.button {
 /* footer */
 
 .footer {
-  padding: var(--section-padding) 0;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
@@ -735,4 +742,82 @@ button.button {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 160% */
+}
+
+/* adaptive */
+
+@media (max-width: 1200px) {
+  .hero_content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about_ax_cars {
+    background: none;
+  }
+
+  .about_ax_cars_content_left {
+    display: none;
+  }
+  .about_ax_cars_content_right {
+    text-align: center;
+  }
+  .about_ax_cars_content_bottom,
+  .about_ax_cars_content_top {
+    left: 0;
+  }
+  .about_ax_cars_content_bottom {
+    justify-content: center;
+  }
+
+  .about_ax_cars_content_bottom_card {
+    width: auto;
+    flex: 1;
+  }
+}
+
+@media (max-width: 1050px) {
+  .hero_section {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 995px) {
+  .main_page_catalog_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .main_page_catalog_cards_card {
+    max-width: 273px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_title {
+    color: #fff;
+    font-family: Gilda Display;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; /* 156.522% */
+    text-transform: uppercase;
+  }
+  .section_title {
+    color: #fff;
+    text-align: center;
+
+    /* H2/Mobile */
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 54px; /* 150% */
+    text-transform: uppercase;
+  }
+  .about_ax_cars_content_bottom {
+    flex-direction: column;
+  }
 }
