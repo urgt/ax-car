@@ -1095,6 +1095,9 @@ button.button {
     flex-direction: column;
   }
 
+  .cta_section_left {
+    width: 100%;
+  }
   .info_cards {
     flex-direction: column;
   }
