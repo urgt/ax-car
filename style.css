@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Poppins:wght@400;500;600;700&family=Raleway:wght@200;400;500;600;700&family=Roboto&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  user-select: none;
+}
+
+a:link,
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --section-padding: 100px;
+  --main-color: #d3a188;
+}
+
+.luxury {
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #be6552 0%, #eca9a0 51.04%, #be6552 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+body {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Raleway;
+  font-style: normal;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+/* header */
+
+.header {
+  width: -webkit-fill-available;
+  padding: 23px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.button {
+  padding: 20px 30px;
+  color: #ebc0a6;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px; /* 100% */
+  text-transform: uppercase;
+  border-image: linear-gradient(to right, #be6552, #eca9a0, #be6552) 1;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+}
+
+/* hero section */
+
+.hero_section {
+  max-height: 674px;
+  background-image: url(/img/Foto-min.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  padding: 90px 0;
+}
+
+.hero_title {
+  color: #fff;
+  font-family: Gilda Display;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px; /* 100% */
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.hero_subtitle {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* about us section */
+
+.about_ax_cars {
+  padding: var(--section-padding) 0;
+  background-image: url(/img/Fotoju-min.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 50%;
+}
+
+.about_ax_cars_content {
+  display: flex;
+}
+.about_ax_cars_content_top {
+  position: relative;
+  left: 20%;
+}
+
+.about_ax_cars_content_left,
+.about_ax_cars_content_right {
+  width: 100%;
+}
+
+.section_subtitle {
+  font-family: Raleway;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.section_title {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 54px; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section_description {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  margin-bottom: 37px;
+}
+
+.about_ax_cars_content_bottom_card {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+}
+
+.about_ax_cars_content_bottom {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+
+  position: relative;
+  left: -10%;
+}
+
+.about_ax_cars_content_bottom_card {
+  padding: 30px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.about_ax_cars_content_bottom_card img {
+  max-width: 50px;
+  height: 50px;
+}
+
+/* main page catalog */
+
+.main_page_catalog {
+  padding: var(--section-padding) 0;
+}
+
+.main_page_catalog_inner {
+  text-align: center;
+}
+
+.main_page_catalog_cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main_page_catalog_cards_card {
+  flex: 1;
+  background-repeat: no-repeat;
+  padding: 200px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+  color: #fff;
+  position: relative;
+}
+.background_overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background: #000;
+}
+
+.content_car {
+  z-index: 1;
+}
+
+.car_category {
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.car_title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32.2px; /* 140% */
+}
+
+.car_price {
+  margin-bottom: 40px;
+  color: #fff;
+  border-radius: 50px;
+  background: var(--primary, #d3a188);
+  padding: 10px 30px;
+  width: fit-content;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 100% */
+  text-transform: uppercase;
+}
+
+.car_info {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.car_info span {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+
+/* how it works section */
+
+.how_it_works {
+  padding: var(--section-padding) 0;
+  text-align: center;
+}
+
+.how_it_works .section_title {
+  margin-bottom: 35px;
+}
+
+.info_cards {
+  display: flex;
+  gap: 20px;
+}
+
+.info_cards_card {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+  flex: 1;
+  padding: 40px 0 100px;
+  text-align: center;
+}
+
+.info_cards_card_title {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.2px; /* 140% */
+  margin-bottom: 20px;
+}
+
+.info_cards_card_description {
+  max-width: 65%;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+
+  /* txt */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* cta section */
+.cta_section {
+  display: flex;
+  align-items: center;
+  padding: var(--section-padding) 0;
+  gap: 55px;
+}
+.cta_section_left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* logos section */
+
+.logos_section {
+  padding: var(--section-padding) 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos_section img {
+  opacity: 0.6;
+}
+
+/* reviews section */
+
+.reviews_section {
+  padding: var(--section-padding) 0;
+  background-image: url(/img/Section-min\(1\).webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.reviews_block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review_item {
+  padding: 52px;
+  text-align: left;
+  background-color: hsla(0, 0%, 0%, 0.82);
+}
+
+.review_text {
+  color: #fff;
+
+  /* txt */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  margin-bottom: 20px;
+}
+
+.review_author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--primary, #d3a188);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.review_author_name {
+  color: #fff;
+
+  /* txt */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+
+.reviews_section .button {
+  margin: 50px auto 0;
+}
+
+/* get consultation */
+
+.get_consultation {
+  padding: var(--section-padding) 0;
+}
+
+.get_consultation_inner {
+  text-align: center;
+  padding: 50px 40px;
+  border: 1px solid rgba(89, 88, 88, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5.5px);
+}
+
+.get_consultation .section_description {
+  margin-bottom: 50px;
+}
+
+.lux_line {
+  background: linear-gradient(
+    90deg,
+    rgba(211, 161, 136, 0) 0%,
+    #d3a188 50%,
+    rgba(211, 161, 136, 0) 100%
+  );
+  height: 1px;
+}
+
+.get_consultation_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.get_consultation_form input {
+  border: none;
+  border-bottom: 1px solid var(--paragraph, rgba(255, 255, 255, 0.6));
+  opacity: 0.6;
+  padding: 15px 0px;
+  flex: 1;
+  background: none;
+  color: var(--text, #fff);
+  font-variant-numeric: lining-nums proportional-nums;
+  /* Caption1 */
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+}
+button.button {
+  background: none;
+  padding: 15px 100px;
+}
+
+.contact_whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paragraph, rgba(255, 255, 255, 0.6));
+  font-variant-numeric: lining-nums proportional-nums;
+
+  /* Caption1 */
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 37px;
+}
+.contact_whatsapp a {
+  display: flex;
+  align-items: center;
+}
+.contact_whatsapp img {
+  margin: 0 4px 0 16px;
+}
+
+/* footer */
+
+.footer {
+  padding: var(--section-padding) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.footer_logo img {
+  margin-bottom: 30px;
+}
+
+.footer_logo p {
+  color: #fff;
+
+  /* txt */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  opacity: 0.5;
+  width: 80%;
+}
+
+.footer_block_title {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.2px; /* 140% */
+  margin-bottom: 32px;
+}
+
+.footer_get_in_touch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.footer_get_in_touch div {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  gap: 6px;
+}
+
+.footer_quicklinks {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  display: flex;
+  opacity: 0.5;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bottom_copyright {
+  padding: 20px 0;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
