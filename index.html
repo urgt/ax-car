@@ -9,6 +9,13 @@
   <body>
     <div class="wrapper">
       <header class="header container">
+        <div class="menu_toggle">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle" onclick="toggleMenu()">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </div>
         <img src="/img/logo.svg" alt="AX CAR" />
         <nav class="header_nav">
           <ul class="nav">
@@ -19,7 +26,40 @@
             <a href="" class="nav_link"><li>Contact us</li></a>
           </ul>
         </nav>
-        <a href="" class="button"> Call us </a>
+
+        <div class="header_right">
+          <ul class="social-links">
+            <li>
+              <div>
+                <div id="lang-form">
+                  <div id="language-selected" class="dropdownbox">EN</div>
+
+                  <div id="dropdown-wrapper">
+                    <ul name="lang" id="select-language-menu" class="menu">
+                      <li class="selected">
+                        English
+                        <div class="lang-code" style="display: none">en</div>
+                      </li>
+                      <li>
+                        Русский
+                        <div class="lang-code" style="display: none">Ру</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="" class="button">
+            <img
+              src="/img/Vector 2.svg"
+              alt="Call us"
+              class="header_call_icon"
+            />
+            <span>Call us</span>
+          </a>
+        </div>
       </header>
       <main>
         <section class="hero_section">
@@ -428,5 +468,11 @@
         </div>
       </main>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
   </body>
 </html>
