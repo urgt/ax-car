@@ -218,6 +218,7 @@ body {
 
 .menu_toggle {
   z-index: 2;
+  display: none;
 }
 
 .toggle {
@@ -969,6 +970,9 @@ button.button {
 @media (max-width: 1050px) {
   .header_nav {
     display: none;
+  }
+  .menu_toggle {
+    display: flex;
   }
   .header_nav.active {
     display: flex;
