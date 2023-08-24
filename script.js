@@ -41,3 +41,16 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+const button = document.querySelector(".all_filters");
+
+button.addEventListener("click", buttonClick, false);
+
+function buttonClick(event) {
+  event.preventDefault();
+}
+
+function showAllFilters() {
+  $(".filter_selects select").show();
+  $(".all_filters").hide();
+}
