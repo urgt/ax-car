@@ -34,7 +34,7 @@ $("#dropdown-wrapper").mouseleave(function () {
   $(".menu").removeClass("showMenu");
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper1", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -44,7 +44,9 @@ var swiper = new Swiper(".mySwiper", {
 
 const button = document.querySelector(".all_filters");
 
-button.addEventListener("click", buttonClick, false);
+if (button) {
+  button.addEventListener("click", buttonClick, false);
+}
 
 function buttonClick(event) {
   event.preventDefault();
@@ -54,3 +56,22 @@ function showAllFilters() {
   $(".filter_selects select").show();
   $(".all_filters").hide();
 }
+
+// car details swiper
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});

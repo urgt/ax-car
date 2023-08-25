@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>AX CAR</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="menu_toggle">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle" onclick="toggleMenu()">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </div>
+        <a href="index.html"><img src="/img/logo.svg" alt="AX CAR" /></a>
+        <nav class="header_nav">
+          <ul class="nav">
+            <a href="catalog.html" class="nav_link"><li>Browse cars</li></a>
+            <a href="" class="nav_link"><li>Conditions</li></a>
+            <a href="" class="nav_link"><li>Buy a car</li></a>
+            <a href="" class="nav_link"><li>About</li></a>
+            <a href="" class="nav_link"><li>Contact us</li></a>
+          </ul>
+        </nav>
+
+        <div class="header_right">
+          <ul class="social-links">
+            <li>
+              <div>
+                <div id="lang-form">
+                  <div id="language-selected" class="dropdownbox">EN</div>
+
+                  <div id="dropdown-wrapper">
+                    <ul name="lang" id="select-language-menu" class="menu">
+                      <li class="selected">
+                        English
+                        <div class="lang-code" style="display: none">en</div>
+                      </li>
+                      <li>
+                        Русский
+                        <div class="lang-code" style="display: none">Ру</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="" class="button">
+            <img
+              src="/img/Vector 2.svg"
+              alt="Call us"
+              class="header_call_icon"
+            />
+            <span>Call us</span>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section
+          class="page_title"
+          style="background-image: url(img/Sectionasas.jpg)"
+        >
+          <div class="page_title_block">
+            <div class="page_title_text">CAR DETAILS</div>
+            <div class="breadcrums">
+              <span>Home</span>
+              <span>Car Details</span>
+            </div>
+          </div>
+          <div class="background_overlay"></div>
+        </section>
+
+        <div class="car_details container">
+          <div class="car_details_inner">
+            <div class="car_details_content">
+              <div class="car_slider">
+                <!-- Swiper -->
+
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="swiper mySwiper2"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/pexels-mike-810357-800x532.jpg-min.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="car_details_price">
+                <div class="car_details_title">Rolls-Royce Ghost</div>
+                <div class="car_details_cost"><span>18000 AED</span>/week</div>
+              </div>
+              <hr />
+              <div class="car_details_info">
+                <div class="block_title">Car Information</div>
+
+                <div class="car_details_info_items">
+                  <div class="car_details_items_wrapper">
+                    <ul class="car_details_info_property_names">
+                      <li>
+                        <span>Class</span>
+                      </li>
+                      <li>
+                        <span>Fuel</span>
+                      </li>
+                      <li>
+                        <span>Transmission</span>
+                      </li>
+                      <li>
+                        <span>Engine</span>
+                      </li>
+                      <li>
+                        <span>Drive Unit</span>
+                      </li>
+                    </ul>
+                    <ul class="car_details_info_property_values">
+                      <li>
+                        <span>: Sedan</span>
+                      </li>
+                      <li>
+                        <span>: Petrol</span>
+                      </li>
+                      <li>
+                        <span>: Auto</span>
+                      </li>
+                      <li>
+                        <span>: V12 – 571 hp </span>
+                      </li>
+                      <li>
+                        <span>: 4WD</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="car_details_items_wrapper">
+                    <ul class="car_details_info_property_names">
+                      <li>
+                        <span>Year</span>
+                      </li>
+                      <li>
+                        <span>Bags</span>
+                      </li>
+                      <li>
+                        <span>Color</span>
+                      </li>
+                      <li>
+                        <span>Doors</span>
+                      </li>
+                    </ul>
+                    <ul class="car_details_info_property_values">
+                      <li>
+                        <span>: 2021</span>
+                      </li>
+                      <li>
+                        <span>: 2 bags</span>
+                      </li>
+                      <li>
+                        <span>: White</span>
+                      </li>
+                      <li>
+                        <span>: 4</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="car_details_desc">
+                <div class="block_title">Car Description</div>
+                <p>
+                  The Rolls-Royce Ghost 2021 is synonymous with luxury and
+                  elegance, with a design that exudes sophistication and
+                  timeless appeal. Its exterior is a perfect balance of clean
+                  lines and curves, showcasing the brand's iconic grille and
+                  Spirit of Ecstasy mascot. Inside, the cabin is meticulously
+                  crafted with the finest materials and attention to detail,
+                  offering a serene environment for both driver and passengers. 
+                </p>
+
+                <a href="" class="button">
+                  <span>BOOK NOW</span>
+                </a>
+              </div>
+            </div>
+            <div class="car_details_sidebar">
+              <div class="car_details_sidebar_gallery">
+                <div class="block_title">Car Information</div>
+                <div class="car_details_sidebar_gallery_imgs">
+                  <img
+                    src="img/pexels-mike-810357-800x532.jpg-min.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="img/pexels-mike-810357-800x532.jpg-min.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="img/pexels-mike-810357-800x532.jpg-min.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="img/pexels-mike-810357-800x532.jpg-min.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="car_details_sidebar_consultant">
+                <div class="consultant_info">
+                  <img src="img/image 8.jpg" alt="" />
+                  <div class="consiltant_info_name">
+                    <p>Mukul Wadhwa</p>
+                    <span>Senior Property Consultant</span>
+                  </div>
+                </div>
+                <div class="consultant_buttons">
+                  <a href="" class="button">
+                    <span>Call us</span>
+                  </a>
+                  <a href="" class="button">
+                    <span>INQUIRY</span>
+                  </a>
+                </div>
+
+                <div class="contact_whatsapp">
+                  Or get availability via
+                  <a href="#">
+                    <img
+                      src="img/akar-icons_whatsapp-fill.svg"
+                      alt="contact us right now via whatsapp"
+                    />
+                    <span class="luxury">WHATSAPP</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer container">
+          <div class="footer_logo">
+            <img src="/img/logo.svg" alt="AX CAR" />
+            <p>
+              AX LUXURY CAR is a rent-a-car company providing luxury and
+              medium-segment vehicles
+            </p>
+          </div>
+          <div class="footer_get_in_touch">
+            <div class="footer_block_title">Get In Touch</div>
+            <div>
+              <img src="img/ph_map-pin.svg" alt="location" />14th Floor,
+              Westburry Office, Dubai
+            </div>
+            <div>
+              <img
+                src="img/oi_envelope-closed.svg"
+                alt="info@axcars.ae"
+              />info@axcars.ae
+            </div>
+            <div>
+              <img
+                src="img/ph_phone-light.svg"
+                alt="+971556702309"
+              />+971556702309
+            </div>
+            <div><img src="img/ph_clock.svg" alt="24/7" />124/7</div>
+          </div>
+          <div class="footer_quicklinks">
+            <div class="footer_block_title">Quicklinks</div>
+            <div>Home</div>
+            <div>Browse cars</div>
+            <div>Conditions</div>
+            <div>About</div>
+            <div>Contact</div>
+          </div>
+          <div class="footer_location">
+            <div class="footer_block_title">Location</div>
+            <img src="img/div.gm-style.jpg" alt="location" />
+          </div>
+        </footer>
+        <div class="bottom_copyright container">
+          AX LUXURY CARS ©2023 All Rights Reserved
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
