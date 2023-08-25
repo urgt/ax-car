@@ -621,8 +621,9 @@ ul.menu li:hover {
 }
 
 .info_cards {
-  display: flex;
+  display: grid;
   gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .info_cards_card {
@@ -1449,6 +1450,10 @@ button.button {
   .car_details_info_property_names {
     width: 14vw;
   }
+
+  .info_cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 850px) {
   .get_consultation {
@@ -1607,5 +1612,8 @@ button.button {
 
   .car_details_desc p {
     column-count: 1;
+  }
+  .info_cards {
+    grid-template-columns: 1fr;
   }
 }
