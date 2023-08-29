@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>AX CAR</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="menu_toggle">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle" onclick="toggleMenu()">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </div>
+        <a href="index.html"><img src="/img/logo.svg" alt="AX CAR" /></a>
+        <nav class="header_nav">
+          <ul class="nav">
+            <a href="catalog.html" class="nav_link"><li>Browse cars</li></a>
+            <a href="" class="nav_link"><li>Conditions</li></a>
+            <a href="" class="nav_link"><li>Buy a car</li></a>
+            <a href="" class="nav_link"><li>About</li></a>
+            <a href="" class="nav_link"><li>Contact us</li></a>
+          </ul>
+        </nav>
+
+        <div class="header_right">
+          <ul class="social-links">
+            <li>
+              <div>
+                <div id="lang-form">
+                  <div id="language-selected" class="dropdownbox">EN</div>
+
+                  <div id="dropdown-wrapper">
+                    <ul name="lang" id="select-language-menu" class="menu">
+                      <li class="selected">
+                        English
+                        <div class="lang-code" style="display: none">en</div>
+                      </li>
+                      <li>
+                        Русский
+                        <div class="lang-code" style="display: none">Ру</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="" class="button">
+            <img
+              src="/img/Vector 2.svg"
+              alt="Call us"
+              class="header_call_icon"
+            />
+            <span>Call us</span>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section
+          class="page_title"
+          style="background-image: url(img/Sectiondd-min.jpeg)"
+        >
+          <div class="page_title_block">
+            <div class="page_title_text">BUY A CAR</div>
+            <div class="breadcrums">
+              <span>Home</span>
+              <span>BUY A CAR</span>
+            </div>
+          </div>
+          <div class="background_overlay"></div>
+        </section>
+
+        <section class="buy_a_car_form container">
+          <div class="section_title">Buy online with delivery</div>
+          <div class="section_description">
+            Let us know your preferences, and we'll handle the entire purchase
+            process for you. Our team will find the right car, negotiate deals,
+            and manage all the details, saving you time and ensuring a
+            hassle-free experience
+          </div>
+          <div class="buy_a_car_form_wrapper">
+            <form action="#" class="get_consultation_form">
+              <input
+                type="text"
+                class="get_consultation_first_name"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                class="get_consultation_last_name"
+                placeholder="Last Name"
+              />
+              <input
+                type="tel"
+                class="get_consultation_phone_number"
+                placeholder="Phone Number"
+              />
+              <input
+                type="email"
+                class="get_consultation_email"
+                placeholder="Email"
+              />
+              <button class="button">SEND</button>
+            </form>
+            <div class="contact_whatsapp">
+              Or contact us right now via
+              <a href="#">
+                <img
+                  src="img/akar-icons_whatsapp-fill.svg"
+                  alt="contact us right now via whatsapp"
+                />
+                <span class="luxury">WHATSAPP</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="steps_buy_car container">
+          <div class="section_subtitle luxury">HOW IT WORKS</div>
+          <div class="section_title">Easy steps to buy a car</div>
+
+          <div class="steps_text">
+            <div class="steps_text_block">
+              <div class="section_title">Easy steps to buy a car</div>
+              <div class="section_description">
+                You can choose from a range of luxury sedans and SUVs or get a
+                reliable medium-segment car
+              </div>
+            </div>
+            <div class="steps_text_block">
+              <div class="steps_text_top">
+                <div class="number">01</div>
+                <p>You can choose from a range of luxury sedans</p>
+              </div>
+              <hr />
+              <div class="section_description">
+                You can choose from a range of luxury sedans and SUVs or get a
+                reliable medium-segment caror get a reliable medium-segment car
+              </div>
+            </div>
+            <div class="steps_text_block">
+              <div class="steps_text_top">
+                <div class="number">02</div>
+                <p>You can choose from a range of luxury sedans</p>
+              </div>
+              <hr />
+              <div class="section_description">
+                You can choose from a range of luxury sedans and SUVs or get a
+                reliable medium-segment car
+              </div>
+            </div>
+          </div>
+        </section>
+        <img
+          class="buy_a_car-img"
+          src="/img/20220906_133944970_iOS-min.jpg"
+          alt=""
+        />
+
+        <section class="how_it_works container">
+          <div class="section_subtitle luxury">HOW IT WORKS</div>
+          <div class="section_title">Easy steps to buy a car</div>
+
+          <div class="info_cards">
+            <div class="info_cards_card">
+              <img src="/img/Location.svg" alt="Quick response" />
+              <div class="info_cards_card_title">Learn conditions</div>
+              <p class="info_cards_card_description">
+                Read the Terms of Use to getfamiliar with the contract
+              </p>
+            </div>
+            <div class="info_cards_card">
+              <img src="/img/Location (1).svg" alt="Quick response" />
+              <div class="info_cards_card_title">Choose a car</div>
+              <p class="info_cards_card_description">
+                Choose from a variety of carspresented in our fleet
+              </p>
+            </div>
+            <div class="info_cards_card">
+              <img src="/img/Location (2).svg" alt="Quick response" />
+              <div class="info_cards_card_title">Fill in the form</div>
+              <p class="info_cards_card_description">
+                Complete the form to booka car lease
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer container">
+          <div class="footer_logo">
+            <img src="/img/logo.svg" alt="AX CAR" />
+            <p>
+              AX LUXURY CAR is a rent-a-car company providing luxury and
+              medium-segment vehicles
+            </p>
+          </div>
+          <div class="footer_get_in_touch">
+            <div class="footer_block_title">Get In Touch</div>
+            <div>
+              <img src="img/ph_map-pin.svg" alt="location" />14th Floor,
+              Westburry Office, Dubai
+            </div>
+            <div>
+              <img
+                src="img/oi_envelope-closed.svg"
+                alt="info@axcars.ae"
+              />info@axcars.ae
+            </div>
+            <div>
+              <img
+                src="img/ph_phone-light.svg"
+                alt="+971556702309"
+              />+971556702309
+            </div>
+            <div><img src="img/ph_clock.svg" alt="24/7" />124/7</div>
+          </div>
+          <div class="footer_quicklinks">
+            <div class="footer_block_title">Quicklinks</div>
+            <div>Home</div>
+            <div>Browse cars</div>
+            <div>Conditions</div>
+            <div>About</div>
+            <div>Contact</div>
+          </div>
+          <div class="footer_location">
+            <div class="footer_block_title">Location</div>
+            <img src="img/div.gm-style.jpg" alt="location" />
+          </div>
+        </footer>
+        <div class="bottom_copyright container">
+          AX LUXURY CARS ©2023 All Rights Reserved
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

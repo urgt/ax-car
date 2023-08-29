@@ -380,6 +380,7 @@ ul.menu li:hover {
   gap: 10px;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 /* hero section */
@@ -1304,6 +1305,73 @@ button.button {
   line-height: normal;
   text-transform: uppercase;
 }
+
+/* buy a car */
+
+.buy_a_car_form {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.buy_a_car_form_wrapper {
+  margin-top: 72px;
+}
+.buy_a_car_form_wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.buy_a_car_form_wrapper .button {
+  grid-column: 1/3;
+  width: auto;
+  justify-content: center;
+}
+
+.steps_buy_car {
+  text-align: center;
+}
+
+.buy_a_car-img {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.steps_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 43px;
+  text-align: left;
+  margin-top: 62px;
+}
+.steps_text_block hr {
+  margin-bottom: 32px;
+}
+
+.steps_text_top {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 160% */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.steps_text_top .number {
+  color: #fff;
+  /* H2 */
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 54px; /* 120% */
+  text-transform: uppercase;
+}
+
 /* adaptive */
 
 @media (max-width: 1200px) {
@@ -1487,6 +1555,20 @@ button.button {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
   }
+
+  .steps_text {
+    grid-template-columns: 1fr;
+  }
+
+  .steps_text_block .section_title {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1573,6 +1655,14 @@ button.button {
   }
   .car_details_info_property_names {
     width: 20vw;
+  }
+
+  .buy_a_car_form_wrapper form {
+    grid-template-columns: 1fr;
+  }
+
+  .buy_a_car_form_wrapper .button {
+    grid-column: unset;
   }
 }
 
