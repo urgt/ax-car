@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>AX CAR</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <div class="menu_toggle">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle" onclick="toggleMenu()">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </div>
+        <a href="index.html"><img src="/img/logo.svg" alt="AX CAR" /></a>
+        <nav class="header_nav">
+          <ul class="nav">
+            <a href="catalog.html" class="nav_link"><li>Browse cars</li></a>
+            <a href="" class="nav_link"><li>Conditions</li></a>
+            <a href="buy-a-car.html" class="nav_link"><li>Buy a car</li></a>
+            <a href="about-us.html" class="nav_link"><li>About Us</li></a>
+            <a href="contact-us.html" class="nav_link"><li>Contact us</li></a>
+          </ul>
+        </nav>
+
+        <div class="header_right">
+          <ul class="social-links">
+            <li>
+              <div>
+                <div id="lang-form">
+                  <div id="language-selected" class="dropdownbox">EN</div>
+
+                  <div id="dropdown-wrapper">
+                    <ul name="lang" id="select-language-menu" class="menu">
+                      <li class="selected">
+                        English
+                        <div class="lang-code" style="display: none">en</div>
+                      </li>
+                      <li>
+                        Русский
+                        <div class="lang-code" style="display: none">Ру</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="" class="button">
+            <img
+              src="/img/Vector 2.svg"
+              alt="Call us"
+              class="header_call_icon"
+            />
+            <span>Call us</span>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section
+          class="page_title"
+          style="background-image: url(img/Sectioniiui-min.jpeg)"
+        >
+          <div class="page_title_block">
+            <div class="page_title_text">Contact us</div>
+            <div class="breadcrums">
+              <span>Home</span>
+              <span>Contact us</span>
+            </div>
+          </div>
+          <div class="background_overlay"></div>
+        </section>
+
+        <section class="contact_us_form_section container">
+          <div class="contact_us_form_block">
+            <form action="#" class="get_consultation_form">
+              <input
+                type="text"
+                class="get_consultation_full_name"
+                placeholder="Full Name"
+              />
+              <input
+                type="tel"
+                class="get_consultation_phone_number"
+                placeholder="Phone Number"
+              />
+              <input
+                type="email"
+                class="get_consultation_email"
+                placeholder="Email"
+              />
+              <textarea
+                name="message"
+                class="message"
+                placeholder="Message"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <button class="button">SEND</button>
+            </form>
+          </div>
+          <div class="contact_us_form_content">
+            <div class="section_subtitle luxury">Contact</div>
+            <div class="section_title">Have other questions?</div>
+            <div class="section_description">
+              Write us a message, and we will reach out shortly
+            </div>
+            <div class="contact_info">
+              <div>
+                <img src="img/ph_map-pin.svg" alt="location" />14th Floor,
+                Westburry Office, Dubai
+              </div>
+              <div>
+                <img
+                  src="img/oi_envelope-closed.svg"
+                  alt="info@axcars.ae"
+                />info@axcars.ae
+              </div>
+              <div>
+                <img
+                  src="img/ph_phone-light.svg"
+                  alt="+971556702309"
+                />+971556702309
+              </div>
+              <div><img src="img/ph_clock.svg" alt="24/7" />124/7</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contct_gallery container">
+          <div class="section_title">VISIT OUR OFFICE</div>
+          <div class="section_subtitle">
+            Innovative Real Estate Agency in Dubai
+          </div>
+
+          <div class="gallery_block">
+            <img src="img/No Active-min.jpg" alt="" />
+            <img class="active_img" src="img/Rectangle 574135-min.jpg" alt="" />
+            <img src="img/No Activeuygmin.jpg" alt="" />
+          </div>
+
+          <a class="view_map_link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="29"
+              height="26"
+              viewBox="0 0 29 26"
+              fill="none"
+            >
+              <path
+                d="M6.80798 16.319C3.45477 17.1562 1.26953 18.5264 1.26953 20.0746C1.26953 22.6236 7.19314 24.69 14.5003 24.69C21.8074 24.69 27.731 22.6236 27.731 20.0746C27.731 18.5264 25.5458 17.1562 22.1926 16.319"
+                stroke="white"
+                stroke-width="1.32"
+              />
+              <mask id="path-2-inside-1_471_1754" fill="white">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5009 22.2284C14.5009 22.2284 22.1932 12.6306 22.1932 8.38223C22.1932 4.1339 18.7492 0.689941 14.5009 0.689941C10.2526 0.689941 6.80859 4.1339 6.80859 8.38223C6.80859 12.6306 14.5009 22.2284 14.5009 22.2284ZM14.5 11.1899C15.8807 11.1899 17 10.0707 17 8.68994C17 7.30923 15.8807 6.18994 14.5 6.18994C13.1193 6.18994 12 7.30923 12 8.68994C12 10.0707 13.1193 11.1899 14.5 11.1899Z"
+                />
+              </mask>
+              <path
+                d="M14.5009 22.2284L13.4709 23.0539L14.5009 24.339L15.5309 23.0539L14.5009 22.2284ZM20.8732 8.38223C20.8732 9.1268 20.5109 10.2935 19.802 11.7651C19.1162 13.1891 18.1892 14.7331 17.2434 16.1742C16.3008 17.6107 15.3557 18.9206 14.645 19.8728C14.2901 20.3482 13.9948 20.7329 13.789 20.9978C13.6861 21.1303 13.6057 21.2327 13.5514 21.3014C13.5243 21.3358 13.5037 21.3617 13.4901 21.3788C13.4833 21.3873 13.4783 21.3936 13.475 21.3976C13.4734 21.3997 13.4723 21.4011 13.4716 21.402C13.4712 21.4024 13.471 21.4027 13.4709 21.4028C13.4708 21.4029 13.4708 21.4029 13.4708 21.403C13.4708 21.4029 13.4709 21.4028 14.5009 22.2284C15.5309 23.0539 15.531 23.0537 15.5312 23.0536C15.5312 23.0534 15.5314 23.0532 15.5316 23.053C15.5319 23.0526 15.5324 23.052 15.533 23.0513C15.5342 23.0498 15.5358 23.0478 15.5379 23.0451C15.5421 23.0399 15.5481 23.0324 15.5558 23.0226C15.5714 23.0031 15.594 22.9747 15.6231 22.9377C15.6815 22.8638 15.7663 22.7558 15.8738 22.6175C16.0887 22.3409 16.3943 21.9426 16.7606 21.4519C17.4923 20.4717 18.4702 19.1166 19.4506 17.6226C20.428 16.1333 21.4241 14.4813 22.1805 12.9108C22.914 11.388 23.5132 9.76184 23.5132 8.38223H20.8732ZM14.5009 2.00994C18.0202 2.00994 20.8732 4.86291 20.8732 8.38223H23.5132C23.5132 3.40488 19.4782 -0.630059 14.5009 -0.630059V2.00994ZM8.12859 8.38223C8.12859 4.86291 10.9816 2.00994 14.5009 2.00994V-0.630059C9.52354 -0.630059 5.48859 3.40488 5.48859 8.38223H8.12859ZM14.5009 22.2284C15.5309 21.4028 15.531 21.4029 15.531 21.403C15.531 21.4029 15.531 21.4029 15.5309 21.4028C15.5308 21.4027 15.5305 21.4024 15.5302 21.402C15.5295 21.4011 15.5283 21.3997 15.5267 21.3976C15.5235 21.3936 15.5185 21.3873 15.5117 21.3788C15.4981 21.3617 15.4775 21.3358 15.4504 21.3014C15.3961 21.2327 15.3156 21.1303 15.2127 20.9978C15.0069 20.7329 14.7117 20.3482 14.3568 19.8728C13.6461 18.9206 12.701 17.6107 11.7583 16.1742C10.8126 14.7331 9.88561 13.1891 9.19975 11.7651C8.4909 10.2935 8.12859 9.1268 8.12859 8.38223H5.48859C5.48859 9.76184 6.08782 11.388 6.82128 12.9108C7.57772 14.4813 8.57379 16.1333 9.55115 17.6226C10.5315 19.1166 11.5095 20.4717 12.2411 21.4519C12.6074 21.9426 12.9131 22.3409 13.128 22.6175C13.2354 22.7558 13.3202 22.8638 13.3786 22.9377C13.4078 22.9747 13.4304 23.0031 13.446 23.0226C13.4537 23.0324 13.4597 23.0399 13.4639 23.0451C13.466 23.0478 13.4676 23.0498 13.4688 23.0513C13.4694 23.052 13.4698 23.0526 13.4702 23.053C13.4704 23.0532 13.4705 23.0534 13.4706 23.0536C13.4708 23.0537 13.4709 23.0539 14.5009 22.2284ZM15.68 8.68994C15.68 9.34164 15.1517 9.86994 14.5 9.86994V12.5099C16.6097 12.5099 18.32 10.7997 18.32 8.68994H15.68ZM14.5 7.50994C15.1517 7.50994 15.68 8.03825 15.68 8.68994H18.32C18.32 6.58021 16.6097 4.86994 14.5 4.86994V7.50994ZM13.32 8.68994C13.32 8.03825 13.8483 7.50994 14.5 7.50994V4.86994C12.3903 4.86994 10.68 6.58021 10.68 8.68994H13.32ZM14.5 9.86994C13.8483 9.86994 13.32 9.34164 13.32 8.68994H10.68C10.68 10.7997 12.3903 12.5099 14.5 12.5099V9.86994Z"
+                fill="white"
+                mask="url(#path-2-inside-1_471_1754)"
+              />
+            </svg>
+            VIEW ON MAP
+          </a>
+        </section>
+
+        <footer class="footer container">
+          <div class="footer_logo">
+            <img src="/img/logo.svg" alt="AX CAR" />
+            <p>
+              AX LUXURY CAR is a rent-a-car company providing luxury and
+              medium-segment vehicles
+            </p>
+          </div>
+          <div class="footer_get_in_touch">
+            <div class="footer_block_title">Get In Touch</div>
+            <div>
+              <img src="img/ph_map-pin.svg" alt="location" />14th Floor,
+              Westburry Office, Dubai
+            </div>
+            <div>
+              <img
+                src="img/oi_envelope-closed.svg"
+                alt="info@axcars.ae"
+              />info@axcars.ae
+            </div>
+            <div>
+              <img
+                src="img/ph_phone-light.svg"
+                alt="+971556702309"
+              />+971556702309
+            </div>
+            <div><img src="img/ph_clock.svg" alt="24/7" />24/7</div>
+          </div>
+          <div class="footer_quicklinks">
+            <div class="footer_block_title">Quicklinks</div>
+            <div>Home</div>
+            <div>Browse cars</div>
+            <div>Conditions</div>
+            <div>About</div>
+            <div>Contact</div>
+          </div>
+          <div class="footer_location">
+            <div class="footer_block_title">Location</div>
+            <img src="img/div.gm-style.jpg" alt="location" />
+          </div>
+        </footer>
+        <div class="bottom_copyright container">
+          AX LUXURY CARS ©2023 All Rights Reserved
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

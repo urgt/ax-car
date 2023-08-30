@@ -1060,6 +1060,10 @@ button.button {
   color: #939393;
   font-variant-numeric: lining-nums proportional-nums;
 
+  -webkit-appearance: none; /* Safari и Chrome */
+  -moz-appearance: none; /* Mozilla */
+  -ms-appearance: none; /* IE */
+
   /* Caption1 */
   font-family: Raleway;
   font-size: 14px;
@@ -1372,6 +1376,105 @@ button.button {
   text-transform: uppercase;
 }
 
+/* contact us page */
+
+.contact_us_form_section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.contact_us_form_block {
+  width: 50%;
+}
+.contact_us_form_block .get_consultation_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact_us_form_block .get_consultation_form input,
+.contact_us_form_block .get_consultation_form textarea {
+  border: 1px solid #ededed;
+  background: #000;
+  color: #999;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px 20px;
+}
+
+.contact_us_form_block .get_consultation_form textarea {
+  opacity: 0.5;
+  border: none;
+  border: 1px solid #ededed;
+}
+
+.contact_us_form_block .get_consultation_form .get_consultation_email,
+.contact_us_form_block .get_consultation_form .message,
+.contact_us_form_block .get_consultation_form .button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+}
+
+.contact_us_form_block .get_consultation_form .button {
+  width: 100%;
+}
+
+.contact_us_form_content .contact_info div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
+.contct_gallery {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.gallery_block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 135px;
+}
+.gallery_block img {
+  width: 50%;
+}
+.active_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.view_map_link {
+  border: 1px solid var(--border-50, rgba(89, 88, 88, 0.5));
+  background: var(--blur-button, rgba(17, 16, 16, 0.8));
+  backdrop-filter: blur(10px);
+
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  padding: 8px 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* adaptive */
 
 @media (max-width: 1200px) {
@@ -1568,6 +1671,31 @@ button.button {
     font-weight: 300;
     line-height: 24px;
     text-transform: uppercase;
+  }
+
+  .contact_us_form_content .section_title {
+    text-align: left;
+  }
+  .contact_us_form_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact_us_form_block {
+    width: 100%;
+  }
+  .contact_us_form_block .get_consultation_form textarea {
+    width: -webkit-fill-available;
+  }
+  .contact_us_form_block .get_consultation_form {
+    display: flex;
+  }
+
+  .view_map_link {
+    padding: 8px 32px;
+  }
+  .gallery_block {
+    margin-top: 50px;
   }
 }
 
