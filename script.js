@@ -75,3 +75,14 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+jQuery(document).ready(function ($) {
+  $(".accordionjs").accordionjs({
+    closeAble: true,
+
+    // Close other sections.(data-close-other)
+    closeOther: true,
+
+    activeIndex: false,
+  });
+});

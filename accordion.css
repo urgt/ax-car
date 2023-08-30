@@ -1,0 +1,76 @@
+.accordionjs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.accordionjs .acc_section {
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+  overflow: hidden;
+}
+.accordionjs .acc_section .acc_head {
+  position: relative;
+  background: #000;
+  padding: 17px 31px;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 160% */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.accordionjs .acc_section .acc_head svg {
+  transform: rotate(-90deg);
+  width: 20px;
+}
+.accordionjs .acc_section .acc_head svg path {
+  fill: #d3a188;
+}
+.accordionjs .acc_section .acc_head h3 {
+  line-height: 1;
+  margin: 5px 0;
+}
+.accordionjs .acc_section .acc_content {
+  padding: 20px;
+  color: #939393;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.accordionjs .acc_section:first-of-type,
+.accordionjs .acc_section:first-of-type .acc_head {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.accordionjs .acc_section:last-of-type,
+.accordionjs .acc_section:last-of-type .acc_content {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.accordionjs .acc_section.acc_active > .acc_content {
+  display: block;
+}
+.accordionjs .acc_section.acc_active > .acc_head {
+  background: #d3a188;
+  color: #000;
+}
+
+.accordionjs .acc_section.acc_active > .acc_head svg {
+  transform: rotate(0deg);
+}
+.accordionjs .acc_section.acc_active > .acc_head svg path {
+  fill: #000;
+}

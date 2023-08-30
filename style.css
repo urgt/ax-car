@@ -1475,6 +1475,22 @@ button.button {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* conditions page */
+.accordions_block {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.accordionjs li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* adaptive */
 
 @media (max-width: 1200px) {
@@ -1791,6 +1807,15 @@ button.button {
 
   .buy_a_car_form_wrapper .button {
     grid-column: unset;
+  }
+
+  .accordions_block {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .accordionjs {
+    text-align: left;
   }
 }
 
