@@ -1451,6 +1451,11 @@ button.button {
   opacity: 0.5;
   letter-spacing: 0.5px;
 }
+.contact_us_form_content .contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .contct_gallery {
   padding-top: var(--section-padding);
