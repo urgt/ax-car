@@ -193,6 +193,7 @@ body {
 
 .header {
   width: -webkit-fill-available;
+  width: -moz-available;
   padding: 23px 20px;
   display: flex;
   justify-content: space-between;
@@ -370,7 +371,7 @@ ul.menu li:hover {
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 14px; /* 100% */
   text-transform: uppercase;
   border-image: linear-gradient(to right, #be6552, #eca9a0, #be6552) 1;
@@ -1225,6 +1226,7 @@ button.button {
 
 .car_details_desc .button {
   width: -webkit-fill-available;
+  width: -moz-available;
   justify-content: center;
 }
 
@@ -1388,11 +1390,19 @@ button.button {
 }
 
 .contact_us_form_block {
-  width: 50%;
+  max-width: 600px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 .contact_us_form_block .get_consultation_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+
+.get_consultation_full_name,
+.get_consultation_phone_number {
+  width: 255px;
 }
 
 .contact_us_form_block .get_consultation_form input,
@@ -1405,7 +1415,10 @@ button.button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 15px 20px;
+  padding: 15px 0px 15px 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .contact_us_form_block .get_consultation_form textarea {
@@ -1641,6 +1654,9 @@ button.button {
   .info_cards {
     grid-template-columns: 1fr 1fr;
   }
+  .contact_us_form_block .get_consultation_form {
+    width: 450px;
+  }
 }
 @media (max-width: 850px) {
   .get_consultation {
@@ -1665,6 +1681,7 @@ button.button {
   }
   .get_consultation_form input {
     width: -webkit-fill-available;
+    width: -moz-available;
   }
   .lux_line {
     display: none;
@@ -1702,9 +1719,11 @@ button.button {
   }
   .contact_us_form_block .get_consultation_form textarea {
     width: -webkit-fill-available;
+    width: -moz-available;
   }
   .contact_us_form_block .get_consultation_form {
     display: flex;
+    width: unset;
   }
 
   .view_map_link {

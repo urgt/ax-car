@@ -77,12 +77,14 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 jQuery(document).ready(function ($) {
-  $(".accordionjs").accordionjs({
-    closeAble: true,
+  if ($(".accordionjs").length) {
+    $(".accordionjs").accordionjs({
+      closeAble: true,
 
-    // Close other sections.(data-close-other)
-    closeOther: true,
+      // Close other sections.(data-close-other)
+      closeOther: true,
 
-    activeIndex: false,
-  });
+      activeIndex: false,
+    });
+  }
 });
