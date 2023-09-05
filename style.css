@@ -1070,7 +1070,7 @@ button.button {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 24px;
   background-image: url("/img/iconamoon_arrow-up-2-thin.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 15px) center;
@@ -1684,6 +1684,7 @@ button.button {
   .get_consultation_inner {
     background: none;
     border: none;
+    padding: unset;
   }
   .get_consultation_inner .section_title {
     color: var(--text, #fff);
@@ -1710,6 +1711,13 @@ button.button {
   .get_consultation_inner {
     background: none;
     border: none;
+  }
+
+  .get_consultation_inner .button {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: flex;
+    justify-content: center;
   }
   .get_consultation_inner .section_title {
     color: var(--text, #fff);
