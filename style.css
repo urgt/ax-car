@@ -147,7 +147,7 @@ a {
   --section-padding: 100px;
   --main-color: #d3a188;
   --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-size: 22px;
+  --swiper-pagination-bullet-size: 10px;
   --swiper-pagination-bullet-inactive-color: #000;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
@@ -1397,7 +1397,6 @@ button.button {
 .contact_us_form_block .get_consultation_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 600px;
 }
 
 .get_consultation_full_name,
@@ -1654,8 +1653,49 @@ button.button {
   .info_cards {
     grid-template-columns: 1fr 1fr;
   }
+
+  .contact_us_form_content .section_title {
+    text-align: left;
+  }
+  .contact_us_form_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact_us_form_block {
+    width: 100%;
+  }
+  .contact_us_form_block .get_consultation_form textarea {
+    width: -webkit-fill-available;
+    width: -moz-available;
+  }
   .contact_us_form_block .get_consultation_form {
-    width: 450px;
+    display: flex;
+    width: unset;
+  }
+  .get_consultation {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .get_consultation_inner {
+    background: none;
+    border: none;
+  }
+  .get_consultation_inner .section_title {
+    color: var(--text, #fff);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 54px; /* 168.75% */
+    text-transform: uppercase;
+  }
+  .get_consultation_form {
+    flex-direction: column;
+  }
+  .get_consultation_form input {
+    width: -webkit-fill-available;
+    width: -moz-available;
   }
 }
 @media (max-width: 850px) {
